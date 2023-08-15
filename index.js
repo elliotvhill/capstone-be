@@ -1,6 +1,6 @@
 require('dotenv').config()
 const axios = require('axios')
-
+const weatherApiKey = process.env.WEATHER_API_KEY
 const applicationId = process.env.ASTRO_APP_ID
 const applicationSecret = process.env.ASTRO_APP_SECRET
 const authString = (`${applicationId}:${applicationSecret}`)
